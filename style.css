@@ -1,0 +1,40 @@
+* {
+  border: 1px solid red;
+}
+body {
+  font-family: sans-serif;
+  margin: 0;
+}
+
+.menu-container,
+.menu {
+  display: flex;
+}
+
+.menu-container {
+  padding: 0 100px;
+  background-color: #1f2937;
+  color: #f9faf8;
+}
+
+.logo {
+  font-size: 24px;
+}
+
+.flex-item:nth-child(2) {
+  flex-grow: 2;
+}
+
+.menu {
+  list-style-type: none;
+}
+
+.menu-container * {
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.menu * {
+  gap: 15px;
+  align-items: center;
+}
