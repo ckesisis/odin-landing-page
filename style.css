@@ -1,5 +1,5 @@
 * {
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 body {
   font-family: sans-serif;
@@ -7,11 +7,13 @@ body {
 }
 
 .menu-container,
-.menu {
+.menu,
+.hero-container {
   display: flex;
 }
 
-.menu-container {
+.menu-container,
+.hero-container {
   padding: 0 100px;
   background-color: #1f2937;
   color: #f9faf8;
@@ -34,7 +36,102 @@ body {
   justify-content: flex-end;
 }
 
+.hero-container * {
+  flex: 1;
+}
+
 .menu * {
   gap: 15px;
   align-items: center;
+}
+
+button.sign-up {
+  background-color: #3882f6;
+  color: #fff;
+  padding: 5px 25px;
+  border-radius: 5px;
+  font-weight: 800;
+}
+
+p.hero-heading {
+  font-size: 48px;
+  font-weight: 900;
+  color: #f9faf8;
+}
+p.hero-heading {
+  margin: 0;
+}
+p.hero-secondary-text {
+  font-size: 18px;
+  color: #e5e7eb;
+}
+.hero-container div .image-placeholder {
+  display: block;
+  background-color: #7b7b7b;
+  color: #fff;
+}
+
+.random-information {
+  display: flex;
+}
+
+.random {
+  text-align: center;
+}
+.random-information .card img {
+  border: 1px solid blue;
+  border-radius: 5px;
+}
+
+div.quote {
+  padding: 50px 300px;
+  background-color: #e5e7eb;
+}
+p.quote {
+  font-size: 36px;
+  font-weight: 100;
+  font-style: italic;
+}
+
+p.author {
+  text-align: right;
+  font-weight: 800;
+}
+
+div.cta {
+  padding: 50px 150px;
+  
+}
+
+div.cta .content {
+  display: flex;
+  flex-direction: row;
+  
+  padding: 25px 150px;
+  border-radius: 5px;
+  background-color: #3882f6;
+  color: #fff;;
+  align-items: center;
+}
+
+div.cta div.content div.card{
+    flex:1 1 0;
+}
+
+div.cta .content .card p{
+    font-size: 24px;
+    font-weight: 900;
+}
+
+div.cta .content .card span{
+    font-size: 14px;
+}
+
+div.cta div.content div.card button.btn-cta{
+    background-color: #3882f6;
+    border:1px solid #fff;
+    color: #fff;
+    padding: 5px 25px;
+    border-radius: 5px;
+   
 }
